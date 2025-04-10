@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudTotus - Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        :root {
+            --bg-color-light: #ffffff;
+            --bg-color-dark: #121212;
+            --text-color-light: #0d47a1;
+            --text-color-dark: #bbdefb;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color-light);
+            color: var(--text-color-light);
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            background-color: inherit;
+        }
+
+        .header {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .theme-switch-wrapper {
+            z-index: 100;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .theme-switch {
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            position: relative;
+        }
+
+        .theme-switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider::before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 8px;
+            color: var(--text-color-light);
+            transition: color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">CloudTotus</div>
+        <div class="message">We're working on something incredible!</div>
+    </div>
+    
+    <div class="theme-switch-wrapper">
+        <i id="themeIcon" class="fas fa-sun icon"></i>
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <script>
+        const toggleSwitch = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function switchTheme(event) {
+            if (event.target.checked) {
+                document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color-dark');
+                document.body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color-dark');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                themeIcon.style.color = '#bbdefb'; // Adjust moon color
+            } else {
+                document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color-light');
+                document.body.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color-light');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                themeIcon.style.color = '#ffcc00'; // Adjust sun color
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme);
+    </script>
+</body>
+</html>
