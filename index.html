@@ -13,7 +13,6 @@
             --text-color-light: #0d47a1;
             --text-color-dark: #bbdefb;
         }
-
         body {
             display: flex;
             justify-content: center;
@@ -25,7 +24,6 @@
             color: var(--text-color-light);
             transition: background-color 0.5s, color 0.5s;
         }
-
         .container {
             padding: 30px;
             text-align: center;
@@ -34,17 +32,19 @@
             max-width: 600px;
             background-color: inherit;
         }
-
         .header {
             font-size: 2em;
             margin-bottom: 0.5em;
         }
-
         .message {
             font-size: 1.2em;
             margin-bottom: 1em;
         }
-
+        .services {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-top: 1em;
+        }
         .theme-switch-wrapper {
             z-index: 100;
             position: absolute;
@@ -53,18 +53,15 @@
             display: flex;
             align-items: center;
         }
-
         .theme-switch {
             display: inline-block;
             width: 60px;
             height: 34px;
             position: relative;
         }
-
         .theme-switch input {
             display: none;
         }
-
         .slider {
             position: absolute;
             cursor: pointer;
@@ -76,7 +73,6 @@
             transition: 0.4s;
             border-radius: 34px;
         }
-
         .slider::before {
             position: absolute;
             content: "";
@@ -88,15 +84,12 @@
             transition: 0.4s;
             border-radius: 50%;
         }
-
         input:checked + .slider {
             background-color: #2196F3;
         }
-
         input:checked + .slider:before {
             transform: translateX(26px);
         }
-
         .icon {
             font-size: 24px;
             margin-right: 8px;
@@ -109,8 +102,17 @@
     <div class="container">
         <div class="header">CloudTotus</div>
         <div class="message">We're working on something incredible!</div>
+        <div class="services">
+            <p>At CloudTotus, we specialize in helping businesses:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li><i class="fas fa-cloud-upload-alt"></i> Migrate to the Cloud seamlessly</li>
+                <li><i class="fas fa-network-wired"></i> Transform their infrastructure to be Cloud-ready</li>
+                <li><i class="fas fa-cogs"></i> Implement DevOps practices</li>
+                <li><i class="fas fa-robot"></i> Integrate cutting-edge AI solutions</li>
+            </ul>
+            <p>Stay tuned for more updates!</p>
+        </div>
     </div>
-    
     <div class="theme-switch-wrapper">
         <i id="themeIcon" class="fas fa-sun icon"></i>
         <label class="theme-switch">
@@ -118,11 +120,9 @@
             <span class="slider round"></span>
         </label>
     </div>
-
     <script>
         const toggleSwitch = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
-
         function switchTheme(event) {
             if (event.target.checked) {
                 document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color-dark');
@@ -136,7 +136,6 @@
                 themeIcon.style.color = '#ffcc00'; // Adjust sun color
             }
         }
-
         toggleSwitch.addEventListener('change', switchTheme);
     </script>
 </body>
