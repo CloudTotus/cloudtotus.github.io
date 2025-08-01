@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
+
   <title>CloudTotus</title>
+
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="./index3.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" />
@@ -356,24 +358,20 @@
           <form id="contact-form" class="first-name-support">
             <div class="submitting-form-parent">
               <div class="submitting-form">
-                <div class="business-email">Business email*</div>
-                <input class="enter-your-email" placeholder="Enter your email" type="text" name="email" />
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Company size*</div>
-                <input class="select" placeholder="Select..." type="text" name="company_size"/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">How can we support you*</div>
-                <input class="select" placeholder="Select..." type="text" name="support"/>
-              </div>
-              <div class="submitting-form">
                 <div class="business-email">First name*</div>
                 <input class="enter-your-email" placeholder="Enter your first name" type="text" name="firstname"/>
               </div>
               <div class="submitting-form">
                 <div class="business-email">Last name*</div>
                 <input class="enter-your-email" placeholder="Enter your last name" type="text" name="lastname"/>
+              </div>
+              <div class="submitting-form">
+                <div class="business-email">Business email*</div>
+                <input class="enter-your-email" placeholder="Enter your email" type="text" name="email" />
+              </div>
+              <div class="submitting-form">
+                <div class="business-email">Phone number*</div>
+                <input class="enter-your-phone" placeholder="Enter your phone number" type="text" name="phone"/>
               </div>
               <div class="submitting-form">
                 <div class="business-email">Company*</div>
@@ -384,20 +382,24 @@
                 <input class="enter-your-email" placeholder="What is your job title?" type="text" name="title"/>
               </div>
               <div class="submitting-form">
+                <div class="business-email">Company size*</div>
+                <input class="select" placeholder="Select..." type="text" name="company_size"/>
+              </div>
+              <div class="submitting-form">
                 <div class="business-email">Country*</div>
                 <input class="select" placeholder="United States" type="text" name="country"/>
               </div>
-              <div class="leads-are-the-blood-for-any-bu">
-                <div class="business-email">Phone number*</div>
-                <input class="enter-your-phone" placeholder="Enter your phone number" type="text" name="phone"/>
+              <div class="full-width-field">
+                <div class="business-email">How can we support you*</div>
+                <textarea class="support-text" placeholder="Please describe how we can support you" name="support"></textarea>
               </div>
             </div>
             <div class="business-name-wrapper">
               <div class="business-name">
                 <div class="by-submitting-this-form-you-a-wrapper">
                   <!-- <div class="by-submitting-this-container">
-                    By submitting this form, you agree to CloudTotus 
-                    <span class="terms-of-service">Terms of Service</span> and 
+                    By submitting this form, you agree to CloudTotus 
+                    <span class="terms-of-service">Terms of Service</span> and 
                     <span class="terms-of-service">Privacy Policy</span>.
                   </div> -->
                 </div>
