@@ -375,15 +375,15 @@
               </div>
               <div class="submitting-form">
                 <div class="business-email">Company*</div>
-                <input class="enter-your-email" placeholder="Where do you work?" type="text" name="company"/>
+                <input class="enter-your-email" placeholder="Where do you work?" type="text" name="companyname"/>
               </div>
               <div class="submitting-form">
                 <div class="business-email">Title*</div>
-                <input class="enter-your-email" placeholder="What is your job title?" type="text" name="title"/>
+                <input class="enter-your-email" placeholder="What is your job title?" type="text" name="jobposition"/>
               </div>
               <div class="submitting-form">
                 <div class="business-email">Company size*</div>
-                <input class="select" placeholder="Select..." type="text" name="company_size"/>
+                <input class="select" placeholder="Select..." type="text" name="companysize"/>
               </div>
               <div class="submitting-form">
                 <div class="business-email">Country*</div>
@@ -391,7 +391,7 @@
               </div>
               <div class="full-width-field">
                 <div class="business-email">How can we support you*</div>
-                <textarea class="support-text" placeholder="Please describe how we can support you" name="support"></textarea>
+                <textarea class="support-text" placeholder="Please describe how we can support you" name="message"></textarea>
               </div>
             </div>
             <div class="business-name-wrapper">
@@ -418,7 +418,7 @@
               event.preventDefault();
               emailjs.sendForm("service_q59mblk","template_g1tq0rr", this)
                 .then(function () {
-                  alert('Sent!');
+                  alert('Thank you for contacting us! We will get back to you ASAP!');
                 }, function (error) {
                   console.log('Failed... ' + JSON.parse(error));
                 });
