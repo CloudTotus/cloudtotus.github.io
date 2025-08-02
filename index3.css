@@ -326,6 +326,10 @@
   font-family: inherit;
   z-index: 2;
 }
+.optimize-your-spend-link {
+  color: inherit;
+  text-decoration: none;
+}
 .optimize-your-spend-maximize-wrapper {
   flex: 1;
   display: flex;
@@ -669,6 +673,24 @@
 .why-cloud-totus {
   height: 50.9px;
   width: 78%;
+  margin: 0 !important;
+  position: absolute;
+  top: 45.4px;
+  right: 164px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 601.1px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 33px;
+  color: #fff;
+  font-family: Sora;
+}
+.why-cloud-totus-thankyou {
+  height: 50.9px;
+  width: 50%;
   margin: 0 !important;
   position: absolute;
   top: 45.4px;
@@ -1201,6 +1223,10 @@
   .optimize-your-spend {
     font-size: 29px;
     line-height: 33px;
+  }
+  .optimize-your-spend-link {
+    color: purple;
+    text-decoration: none;
   }
   .optimize-your-spend-maximize-wrapper {
     min-width: 100%;
