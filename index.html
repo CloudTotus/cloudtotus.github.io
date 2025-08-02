@@ -268,7 +268,7 @@
           <nav class="devops-parent">
             <div style="cursor: pointer;" class="cloud-infra">DevOps</div>
             <div style="cursor: pointer;" class="cloud-infra">Cloud Infra</div>
-            <div style="cursor: pointer;" class="cloud-infra">Ai Services</div>
+            <div style="cursor: pointer;" class="cloud-infra">AI Services</div>
             <div style="cursor: pointer;" class="cloud-infra">Why</div>
             <div style="cursor: pointer;" class="cloud-infra">Talk to us</div>
           </nav>
@@ -355,43 +355,43 @@
           </div>
         </section>
         <section class="first-name-support-wrapper">
-          <form id="contact-form" class="first-name-support">
+          <form id="contact-form" class="first-name-support" action="https://n8n.magebr.com/webhook/c63ed714-d389-4ece-b41d-337875a6c880" method="GET">
             <div class="submitting-form-parent">
               <div class="submitting-form">
-                <div class="business-email">First name*</div>
-                <input class="enter-your-email" placeholder="Enter your first name" type="text" name="firstname"/>
+                <div class="business-email">First name *</div>
+                <input class="enter-your-email" placeholder="Enter your first name" type="text" name="firstname" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Last name*</div>
-                <input class="enter-your-email" placeholder="Enter your last name" type="text" name="lastname"/>
+                <div class="business-email">Last name *</div>
+                <input class="enter-your-email" placeholder="Enter your last name" type="text" name="lastname" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Business email*</div>
-                <input class="enter-your-email" placeholder="Enter your email" type="text" name="email" />
+                <div class="business-email">Business email *</div>
+                <input class="enter-your-email" placeholder="Enter your email" type="email" name="email" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Phone number*</div>
-                <input class="enter-your-phone" placeholder="Enter your phone number" type="text" name="phone"/>
+                <div class="business-email">Phone number *</div>
+                <input class="enter-your-phone" placeholder="Enter your phone number" type="number" name="phone" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Company*</div>
-                <input class="enter-your-email" placeholder="Where do you work?" type="text" name="companyname"/>
+                <div class="business-email">Company *</div>
+                <input class="enter-your-email" placeholder="Where do you work?" type="text" name="companyname" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Title*</div>
-                <input class="enter-your-email" placeholder="What is your job title?" type="text" name="jobposition"/>
+                <div class="business-email">Position *</div>
+                <input class="enter-your-email" placeholder="What is your job position?" type="text" name="jobposition" required/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Company size*</div>
+                <div class="business-email">Company size</div>
                 <input class="select" placeholder="Select..." type="text" name="companysize"/>
               </div>
               <div class="submitting-form">
-                <div class="business-email">Country*</div>
-                <input class="select" placeholder="United States" type="text" name="country"/>
+                <div class="business-email">Country *</div>
+                <input class="select" placeholder="United States" type="text" name="country" required/>
               </div>
               <div class="full-width-field">
-                <div class="business-email">How can we support you*</div>
-                <textarea class="support-text" placeholder="Please describe how we can support you" name="message"></textarea>
+                <div class="business-email">How can we support you *</div>
+                <textarea class="support-text" placeholder="Please describe how we can support you" name="message" required></textarea>
               </div>
             </div>
             <div class="business-name-wrapper">
@@ -410,7 +410,7 @@
             </div>
           </form>
 
-          <script type="text/javascript"
+          <!-- <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
           <script>
             emailjs.init("3F2beVDRF6k88UX-D");
@@ -423,8 +423,7 @@
                   console.log('Failed... ' + JSON.parse(error));
                 });
             });
-          </script>
-
+          </script> -->
 
           <!-- Script do Menu Hambúrguer -->
           <script>
