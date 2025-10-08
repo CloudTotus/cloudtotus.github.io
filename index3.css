@@ -14,7 +14,7 @@
 }
 
 .we-specialize-in {
-  margin: 0;
+  margin: 0 0 15px 0;
   font-weight: 300;
 }
 .across {
@@ -377,7 +377,7 @@
 }
 .cloudtotus-provides-expert {
   margin-block-start: 0;
-  margin-block-end: 13.3px;
+  margin-block-end: 15px;
 }
 .cloudtotus-provides-expert-container {
   position: relative;
@@ -392,6 +392,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
   padding: 0 203px;
 }
 .frame-div,
@@ -636,6 +638,7 @@
   letter-spacing: 0.01em;
   line-height: 17.9px;
   font-weight: 300;
+  white-space: nowrap;
 }
 .devops-parent {
   margin: 0;
@@ -643,15 +646,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   text-align: left;
   font-size: 16.5px;
   color: #fff;
-  font-family: Inter;
+  font-family: Sora;
 }
 .why-cloud-totus-inner {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -681,7 +683,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 601.1px;
+  gap: 200px;
   max-width: 100%;
   text-align: left;
   font-size: 33px;
@@ -963,7 +965,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 18px 0 24px;
 }
 .talk-to-us1 {
@@ -997,7 +999,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 38px;
+  gap: 10px;
   max-width: 100%;
 }
 .business-name-wrapper,
