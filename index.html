@@ -1,564 +1,198 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-  <title>CloudTotus</title>
-
-  <link rel="stylesheet" href="./global.css" />
-  <link rel="stylesheet" href="./index3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,700&display=swap" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudTotus - Empowering Your Digital Future</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js?render=6LeBPdgrAAAAAGH4s-DRmxTmsozkCmHpmvVYsAQH"></script>
-
-
-  <style>
-    .grecaptcha-badge { 
-      visibility: hidden; 
-    }
-    .privacy-modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
-      animation: fadeIn 0.3s ease-out;
-    }
-    .privacy-modal-content {
-      background-color: white;
-      margin: 15% auto;
-      padding: 30px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 600px;
-      position: relative;
-      animation: slideUp 0.3s ease-out;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      font-family: 'Sora', sans-serif;
-      text-align: center;
-    }
-    .privacy-close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      position: absolute;
-      right: 15px;
-      top: 10px;
-    }
-    .privacy-close:hover {
-      color: #000;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes slideUp {
-      from {transform: translateY(50px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-    #mobile-banner{display: flex;width: 100%;margin-top: 100px;position: relative;min-height: 200px;align-items: center;justify-content: center;text-align: center;}
-    #mobile-banner .banner-text{padding: 20px;max-width: 90%;}
-    #mobile-banner h1{font-size: 2.5rem;font-weight: 700;margin-bottom: 20px;}
-    #mobile-banner p{font-size: 1.1rem;line-height: 1.6;}
-    @media (max-width: 968px) {
-      #desk-banner { display: none;}
-      header#header-principal {
-        width: 45%;
-      }
-
-      p.we-specialize-in {
-        line-height: normal !important;
-      }
-
-      .transform-your-business-container {
-        height: auto !important;
-        padding-bottom: 64px;
-      }
-
-      .cloudtotus-offers-a-container {
-        height: auto !important;
-      }
-
-      section.rectangle-parent3 {
-        width: 100%;
-        padding-left: 24px !important;
-        padding-right: 24px !important;
-      }
-
-      .submitting-form-parent {
-        height: auto !important;
-      }
-
-      .submitting-form {
-        width: 100% !important;
-      }
-
-      .terms-totus {
-        padding-top: 64px !important;
-      }
-    }
-  </style>
+  <script defer src="https://analytics2.cajuclc.com/script.js" data-website-id="dbaaac40-4074-4cf0-a102-f0fc9a183a11"></script>
 </head>
-
 <body>
-  <div class="home-1440-px">
-    <main class="home-px">
-      <!-- <div class="we-specialize-in-container">
-        
-
-      </div> -->
-      <div class="rectangle-parent">
-        <div class="frame-child"></div>
-
-        <!-- Hero Section -->
-        <div id="mobile-banner" style="background:none!important; text-align: center; padding: 40px 20px 5px;">
-          <div class="banner-text">
-            <h1 style="font-family: 'Inter', 'Segoe UI', sans-serif; font-size: 4.5rem; font-weight: 800; margin-bottom: 30px; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); background: linear-gradient(135deg, #ffffff, #e0e7ff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Empowering Your Digital Future</h1>
-            <p style="font-family: 'Inter', sans-serif; font-size: 1.3rem; font-weight: 400; max-width: 1300px; margin: 0 auto; color: rgba(255,255,255,0.9); line-height: 1.7; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">We specialize in cutting-edge solutions across <span style="color: #60a5fa; font-weight: 600;">DevOps</span>, <span style="color: #34d399; font-weight: 600;">Cloud Infrastructure</span>, <span style="color: #fbbf24; font-weight: 600;">Cost Management</span>, and <span style="color: #f472b6; font-weight: 600;">AI Services</span>.<br>Designed to optimize operations, reduce costs, and unlock innovation.</p>
-          </div>
-        </div>
-
-        <!-- Services Section -->
-        <div class="frame-div">
-          <div class="frame-parent1">
-            <section class="frame-section" id="devops">
-              <div class="frame-wrapper1">
-                <div class="rectangle-container">
-                  <div class="rectangle-div"></div>
-                  <h1 class="cloud-infrastructure-cost1">DevOps</h1>
-                  <div class="star-control">
-                    <img class="star-control-child" loading="lazy" alt="" src="./public/star-6.svg" />
-                    <i class="are-your-cloud">Streamline your development lifecycle</i>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-wrapper">
-                <img class="blog-icon" loading="lazy" alt="" src="./public/blog.svg" />
-              </div>
-              <div class="rectangle-parent1">
-                <div class="frame-child1"></div>
-                <div class="optimize-your-spend-maximize-wrapper">
-                  <h2 class="optimize-your-spend">
-                    Streamline Your Development Lifecycle
-                  </h2>
-                </div>
-                <img class="group-icon" loading="lazy" alt="" src="./public/devops.svg" />
-              </div>
-            </section>
-            <div class="cloudtotus-provides-expert-clo-wrapper">
-              <div class="cloudtotus-provides-expert-container">
-                <p class="cloudtotus-provides-expert">
-                  Accelerate your innovation and deliver high-quality software faster with our comprehensive DevOps services.
-                </p>
-                <p class="we-specialize-in">
-                  We help you implement robust CI/CD pipelines, automate tedious tasks, and foster seamless collaboration between your development and operations teams.
-                </p>
-                <p class="we-specialize-in">
-                  From initial assessment to full-scale implementation and ongoing support, CloudTotus empowers you to achieve continuous integration and continuous delivery with confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="frame-div">
-          <div class="frame-parent1">
-            <section class="frame-section" id="cloud-infrastructure">
-              <div class="frame-wrapper1">
-                <div class="rectangle-container">
-                  <div class="rectangle-div"></div>
-                  <h1 class="cloud-infrastructure-cost1">
-                    Cloud Infrastructure
-                  </h1>
-                  <div class="star-control">
-                    <img class="star-control-child" loading="lazy" alt="" src="./public/star-6.svg" />
-
-                    <i class="are-your-cloud">Build scalable and secure cloud infra
-                    </i>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-wrapper">
-                <img class="blog-icon" loading="lazy" alt="" src="./public/blog.svg" />
-              </div>
-              <div class="rectangle-parent1">
-                <div class="frame-child1"></div>
-                <div class="optimize-your-spend-maximize-wrapper">
-                  <h2 class="optimize-your-spend">
-                    Design, Deploy, and Scale with Confidence
-                  </h2>
-                </div>
-                <img class="group-icon" loading="lazy" alt="" src="./public/cloud.svg" />
-              </div>
-            </section>
-            <div class="cloudtotus-provides-expert-clo-wrapper">
-              <div class="cloudtotus-provides-expert-container">
-                <p class="cloudtotus-provides-expert">
-                  CloudTotus provides expert cloud infrastructure services to help you design, deploy, and manage scalable, secure, and high-performance cloud environments.
-                </p>
-                <p id="id-we-specialize-in" class="we-specialize-in">
-                  We architect robust solutions, implement best practices for security and compliance, and ensure your infrastructure can scale seamlessly with your business growth across all major cloud providers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Cost Management Section -->
-        <div class="frame-div">
-          <div class="frame-parent1">
-            <section class="frame-section" id="cost-management">
-              <div class="frame-wrapper1">
-                <div class="rectangle-container">
-                  <div class="rectangle-div"></div>
-                  <h1 class="cloud-infrastructure-cost1">
-                    Cost Management
-                  </h1>
-                  <div class="star-control">
-                    <img class="star-control-child" loading="lazy" alt="" src="./public/star-6.svg" />
-                    <i class="are-your-cloud">Are your cloud costs spiraling out of control?</i>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-wrapper">
-                <img class="blog-icon" loading="lazy" alt="" src="./public/blog.svg" />
-              </div>
-              <div class="rectangle-parent1">
-                <div class="frame-child1"></div>
-                <div class="optimize-your-spend-maximize-wrapper">
-                  <h2 class="optimize-your-spend">
-                    Optimize Your Spend, Maximize Your Value
-                  </h2>
-                </div>
-                <img class="group-icon" loading="lazy" alt="" src="./public/money-saving.svg" />
-              </div>
-            </section>
-            <div class="cloudtotus-provides-expert-clo-wrapper">
-              <div class="cloudtotus-provides-expert-container">
-                <p class="cloudtotus-provides-expert">
-                  CloudTotus provides expert cloud infrastructure cost management services to help you gain complete visibility, control, and optimization over your cloud spending.
-                </p>
-                <p class="we-specialize-in">
-                  We identify inefficiencies, implement cost-saving strategies, and leverage the latest tools to ensure you're getting the most value from your cloud investments across all major providers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- AI Services Section -->
-        <div class="frame-div">
-          <div class="frame-parent1">
-            <section class="frame-section" id="ai-services">
-              <div class="frame-wrapper1">
-                <div class="rectangle-container">
-                  <div class="rectangle-div"></div>
-                  <h1 class="cloud-infrastructure-cost1">
-                    AI Services
-                  </h1>
-                  <div class="star-control">
-                    <img class="star-control-child" loading="lazy" alt="" src="./public/star-6.svg" />
-                    <i class="are-your-cloud">Unlock the power of artificial intelligence</i>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-wrapper">
-                <img class="blog-icon" loading="lazy" alt="" src="./public/blog.svg" />
-              </div>
-              <div class="rectangle-parent1">
-                <div class="frame-child1"></div>
-                <div class="optimize-your-spend-maximize-wrapper">
-                  <h2 class="optimize-your-spend">
-                    Transform Your Business with GenAI
-                  </h2>
-                </div>
-                <img class="group-icon" loading="lazy" alt="" src="./public/ai-services.svg" />
-              </div>
-            </section>
-            <div class="cloudtotus-provides-expert-clo-wrapper">
-              <div class="cloudtotus-provides-expert-container">
-                <p class="cloudtotus-provides-expert">
-                  CloudTotus provides cutting-edge AI services to help you harness the power of artificial intelligence and machine learning for your business transformation.
-                </p>
-                <p class="we-specialize-in">
-                  We implement intelligent automation, predictive analytics, and AI-driven solutions that enhance decision-making, improve efficiency, and unlock new opportunities for innovation across your organization.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
       </div>
-      <header id="header-principal" class="why-cloud-totus">
-        <div class="industry-cloud">
-          <img class="industry-cloud-child" loading="lazy" alt="" src="./public/group-4.svg" />
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#devops">DevOps</a></li>
+        <li><a href="#cloud">Cloud Infrastructure</a></li>
+        <li><a href="#cost">Cost Management</a></li>
+        <li><a href="#ai">AI Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          <div class="cloudtotus-wrapper">
-            <h2 class="cloudtotus">CloudTotus</h2>
-          </div>
-        </div>
-        <div class="why-cloud-totus-inner">
-          <nav class="devops-parent">
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#devops" style="text-decoration: none; color: inherit;">DevOps</a></div>
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#cloud-infrastructure" style="text-decoration: none; color: inherit;">Cloud Infrastructure</a></div>
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#cost-management" style="text-decoration: none; color: inherit;">Cost Management</a></div>
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#ai-services" style="text-decoration: none; color: inherit;">AI Services</a></div>
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#why" style="text-decoration: none; color: inherit;">Why CloudTotus</a></div>
-            <div style="cursor: pointer;" class="cloud-infra"><a href="#contact" style="text-decoration: none; color: inherit;">Contact Us</a></div>
-          </nav>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Empowering Your Digital&nbsp;Future</h1>
+      <p class="hero-subtitle">We specialize in cutting-edge solutions across <span class="highlight blue">DevOps</span>, <span class="highlight green">Cloud Infrastructure</span>, <span class="highlight yellow">Cost Management</span>, and <span class="highlight pink">AI Services</span>.</p>
+      <p class="hero-description">Designed to optimize operations, reduce costs, and unlock innovation.</p>
+      <a href="#contact" class="hero-cta">Get Started</a>
+    </div>
+  </section>
 
-        <!-- Menu Hambúrguer Mobile -->
-        <div class="mobile-menu-container">
-          <button class="hamburger-menu" id="hamburger-btn" aria-label="Menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-
-          <nav class="mobile-nav" id="mobile-nav">
-            <div class="mobile-nav-content">
-              <div class="mobile-logo">
-                <img src="./public/group-4.svg" alt="CloudTotus" />
-                <h3>CloudTotus</h3>
-              </div>
-              <ul class="mobile-nav-list">
-                <li><a href="#devops" class="mobile-nav-link">DevOps</a></li>
-                <li><a href="#cloud-infrastructure" class="mobile-nav-link">Cloud Infrastructure</a></li>
-                <li><a href="#cost-management" class="mobile-nav-link">Cost Management</a></li>
-                <li><a href="#ai-services" class="mobile-nav-link">AI Services</a></li>
-                <li><a href="#why" class="mobile-nav-link">Why CloudTotus</a></li>
-                <li><a href="#contact" class="mobile-nav-link talk-to-us-mobile">Contact Us</a></li>
-              </ul>
-            </div>
-          </nav>
+  <section id="devops" class="service-section">
+    <div class="container">
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="./public/devops.svg" alt="DevOps">
         </div>
-      </header>
-    </main>
-    <section class="rectangle-parent3">
-      <div class="frame-child4"></div>
-      <div class="agreement-email-parent">
-        <div class="agreement-email" id="why">
-          <div class="why-choose-cloudtotus">Why Choose CloudTotus?</div>
-        </div>
-        <div class="discover-how-cloudtotus" style="width: 90%; margin: -50px auto;">
-          At CloudTotus, we provide the experience of veteran enterprise practitioners who not only have extensive industry experience, but will also be completely devoted to your success! We understand every business is unique, so we will work to adapt and customize our methodology within the context of your goals, constraints and roadmap.<br><br>
-          Our certified professionals deliver actionable results, not just a plan! We connect every engagement back to defined KPIs with accountability in our delivery, which ensures that your Cloud and AI journey is effective, efficient, and made to have the least friction and most impact in how you operate.<br><br>
-          The CloudTotus consulting approach takes you from assessment through enablement while progressively driving value by improving the end solution to deliver more value, adding more governance, and ultimately building a more resilient organization.
-        </div>
-
-          <section class="email-button">
-            <!-- <div class="image-1-wrapper">
-              <img class="image-1-icon" style="max-width: 469px;" loading="lazy" alt="" src="./public/image-1@2x.png" />
-            </div> -->
-          </section>
+        <div class="service-content">
+          <h2>DevOps</h2>
+          <h3>Streamline Your Development Lifecycle</h3>
+          <p>Accelerate your innovation and deliver high-quality software faster with our comprehensive DevOps services.</p>
+          <p>We help you implement robust CI/CD pipelines, automate tedious tasks, and foster seamless collaboration between your development and operations teams.</p>
+          <p>From initial assessment to full-scale implementation and ongoing support, CloudTotus empowers you to achieve continuous integration and continuous delivery with confidence.</p>
         </div>
       </div>
-      <div class="cloud-totus-name">
-        <section class="website-totus" id="contact">
-          <div class="ready-to-take-your-business-hi-wrapper">
-            <div class="why-choose-cloudtotus" style="max-width: 60% !important;">
-              Ready to take your business higher?
-            </div>
-          </div>
-          <div class="discover-how-cloudtotus" style="width: 70%; margin: -50px auto 10px;">
-            Discover how CloudTotus can empower your organization to achieve its full potential.<br>
-            Contact us today for a consultation and let's build your digital future, together.
-          </div>
-        </section>
-        <section class="first-name-support-wrapper">
-          <form id="contact-form" class="first-name-support" action="https://n8n.cloudtot.us/webhook/c63ed714-d389-4ece-b41d-337875a6c880" method="GET">
-            <div class="submitting-form-parent">
-              <div class="submitting-form">
-                <div class="business-email">First name *</div>
-                <input class="enter-your-email" placeholder="Enter your first name" type="text" name="firstname" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Last name *</div>
-                <input class="enter-your-email" placeholder="Enter your last name" type="text" name="lastname" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Business email *</div>
-                <input class="enter-your-email" placeholder="Enter your email" type="email" name="email" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Phone number *</div>
-                <input class="enter-your-phone" placeholder="Enter your phone number" type="number" name="phone" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Company *</div>
-                <input class="enter-your-email" placeholder="Where do you work?" type="text" name="companyname" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Position *</div>
-                <input class="enter-your-email" placeholder="What is your job position?" type="text" name="jobposition" required/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Company size</div>
-                <input class="select" placeholder="Select..." type="text" name="companysize"/>
-              </div>
-              <div class="submitting-form">
-                <div class="business-email">Country *</div>
-                <input class="select" placeholder="United States" type="text" name="country" required/>
-              </div>
-              <div class="full-width-field">
-                <div class="business-email">How can we support you *</div>
-                <textarea class="support-text" placeholder="Please describe how we can support you" name="message" required></textarea>
-              </div>
-            </div>
-            <div class="business-name-wrapper">
-              <div class="business-name">
-                <div class="by-submitting-this-form-you-a-wrapper">
-                  <div class="by-submitting-this-container">
-                    By submitting this form, you agree to our 
-                    <span class="terms-of-service" onclick="showPrivacyPolicy()" style="cursor: pointer;">Privacy Policy</span>.
-                  </div>
-                </div>
-                <button class="talk-to-us-wrapper g-recaptcha" data-sitekey="6LeBPdgrAAAAAGH4s-DRmxTmsozkCmHpmvVYsAQH" data-callback="onSubmit">
-                  <b class="talk-to-us1">Talk to us</b>
-                </button>
-              </div>
-            </div>
-          </form>
+    </div>
+  </section>
 
-          <script>
-            function onSubmit(token) {
-              document.getElementById("contact-form").submit();
-            }
-            
-            function showPrivacyPolicy() {
-              document.getElementById('privacy-modal').style.display = 'block';
-            }
-            
-            function closePrivacyPolicy() {
-              document.getElementById('privacy-modal').style.display = 'none';
-            }
-            
-            window.onclick = function(event) {
-              const modal = document.getElementById('privacy-modal');
-              if (event.target == modal) {
-                modal.style.display = 'none';
-              }
-            }
-          </script>
-
-          <!-- Script do Menu Hambúrguer -->
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const hamburgerBtn = document.getElementById('hamburger-btn');
-              const mobileNav = document.getElementById('mobile-nav');
-              const body = document.body;
-
-              // Criar overlay
-              const overlay = document.createElement('div');
-              overlay.className = 'mobile-nav-overlay';
-              body.appendChild(overlay);
-
-              // Função para abrir/fechar menu
-              function toggleMenu() {
-                const isActive = hamburgerBtn.classList.contains('active');
-
-                if (isActive) {
-                  // Fechar menu
-                  hamburgerBtn.classList.remove('active');
-                  mobileNav.classList.remove('active');
-                  overlay.classList.remove('active');
-                  body.style.overflow = '';
-                } else {
-                  // Abrir menu
-                  hamburgerBtn.classList.add('active');
-                  mobileNav.classList.add('active');
-                  overlay.classList.add('active');
-                  body.style.overflow = 'hidden';
-                }
-              }
-
-              // Event listeners
-              hamburgerBtn.addEventListener('click', toggleMenu);
-              overlay.addEventListener('click', toggleMenu);
-
-              // Fechar menu ao clicar em um link
-              const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-              mobileNavLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                  // Se não for o botão "Talk to us", apenas fecha o menu
-                  if (!this.classList.contains('talk-to-us-mobile')) {
-                    e.preventDefault();
-                  }
-                  toggleMenu();
-                });
-              });
-
-              // Fechar menu com tecla ESC
-              document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && hamburgerBtn.classList.contains('active')) {
-                  toggleMenu();
-                }
-              });
-
-              // Fechar menu ao redimensionar para desktop
-              window.addEventListener('resize', function () {
-                if (window.innerWidth > 980 && hamburgerBtn.classList.contains('active')) {
-                  toggleMenu();
-                }
-              });
-            });
-          </script>
-        </section>
-      </div>
-      <div class="how-can-help-wrapper">
-        <div class="how-can-help">
-          <img class="camada-1-icon" loading="lazy" alt="" src="./public/camada-1.svg" />
-
-          <div class="cloudtotus-container">
-            <h2 class="cloudtotus1">CloudTotus</h2>
-          </div>
+  <section id="cloud" class="service-section alt">
+    <div class="container">
+      <div class="service-card reverse">
+        <div class="service-icon">
+          <img src="cloud-large.svg" alt="Cloud Infrastructure">
+        </div>
+        <div class="service-content">
+          <h2>Cloud Infrastructure</h2>
+          <h3>Design, Deploy, and Scale with Confidence</h3>
+          <p>CloudTotus provides expert cloud infrastructure services to help you design, deploy, and manage scalable, secure, and high-performance cloud environments.</p>
+          <p>We architect robust solutions, implement best practices for security and compliance, and ensure your infrastructure can scale seamlessly with your business growth across all major cloud providers.</p>
         </div>
       </div>
-    </section>
-    <!-- <section class="terms-submit"></section> -->
-    <!-- <img class="untitled-1-copy-2" alt="" src="./public/untitled1-copy-2@2x.png" /> -->
-  </div>
+    </div>
+  </section>
 
-  <!-- Privacy Policy Modal -->
-  <div id="privacy-modal" class="privacy-modal">
-    <div class="privacy-modal-content">
-      <span class="privacy-close" onclick="closePrivacyPolicy()">&times;</span>
-      <h2 style="color: #013b6f; margin-bottom: 20px;">Privacy Policy</h2>
-      <p style="line-height: 1.6; color: #333;">
-        We will use your contact information solely to respond to your inquiry and provide you with information about our services. 
-        <br><br>
-        We do not sell, share, or distribute your personal data to third parties.
-      </p>
-      <button onclick="closePrivacyPolicy()" style="background: #013b6f; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 20px; font-family: 'Sora', sans-serif;">Close</button>
+  <section id="cost" class="service-section">
+    <div class="container">
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="./public/money-saving.svg" alt="Cost Management">
+        </div>
+        <div class="service-content">
+          <h2>Cost Management</h2>
+          <h3>Optimize Your Spend, Maximize Your Value</h3>
+          <p>CloudTotus provides expert cloud infrastructure cost management services to help you gain complete visibility, control, and optimization over your cloud spending.</p>
+          <p>We identify inefficiencies, implement cost-saving strategies, and leverage the latest tools to ensure you're getting the most value from your cloud investments across all major providers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" class="service-section alt">
+    <div class="container">
+      <div class="service-card reverse">
+        <div class="service-icon">
+          <img src="./public/ai-services.svg" alt="AI Services">
+        </div>
+        <div class="service-content">
+          <h2>AI Services</h2>
+          <h3>Transform Your Business with GenAI</h3>
+          <p>CloudTotus provides cutting-edge AI services to help you harness the power of artificial intelligence and machine learning for your business transformation.</p>
+          <p>We implement intelligent automation, predictive analytics, and AI-driven solutions that enhance decision-making, improve efficiency, and unlock new opportunities for innovation across your organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="why-section">
+    <div class="container">
+      <h2>Why Choose CloudTotus?</h2>
+      <div class="why-content">
+        <p>At CloudTotus, we provide the experience of veteran enterprise practitioners who not only have extensive industry experience, but will also be completely devoted to your success! We understand every business is unique, so we will work to adapt and customize our methodology within the context of your goals, constraints and roadmap.</p>
+        <p>Our certified professionals deliver actionable results, not just a plan! We connect every engagement back to defined KPIs with accountability in our delivery, which ensures that your Cloud and AI journey is effective, efficient, and made to have the least friction and most impact in how you operate.</p>
+        <p>The CloudTotus consulting approach takes you from assessment through enablement while progressively driving value by improving the end solution to deliver more value, adding more governance, and ultimately building a more resilient organization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Ready to take your business higher?</h2>
+      <p class="contact-intro">Discover how CloudTotus can empower your organization to achieve its full potential. Contact us today for a consultation and let's build your digital future, together.</p>
+      
+      <form id="contact-form" class="contact-form" action="https://n8n.cloudtot.us/webhook/c63ed714-d389-4ece-b41d-337875a6c880" method="GET">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>First name *</label>
+            <input type="text" name="firstname" placeholder="Enter your first name" required>
+          </div>
+          <div class="form-group">
+            <label>Last name *</label>
+            <input type="text" name="lastname" placeholder="Enter your last name" required>
+          </div>
+          <div class="form-group">
+            <label>Business email *</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone number *</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label>Company *</label>
+            <input type="text" name="companyname" placeholder="Where do you work?" required>
+          </div>
+          <div class="form-group">
+            <label>Position *</label>
+            <input type="text" name="jobposition" placeholder="What is your job position?" required>
+          </div>
+          <div class="form-group">
+            <label>Company size</label>
+            <input type="text" name="companysize" placeholder="Select...">
+          </div>
+          <div class="form-group">
+            <label>Country *</label>
+            <input type="text" name="country" placeholder="United States" required>
+          </div>
+          <div class="form-group full-width">
+            <label>How can we support you *</label>
+            <textarea name="message" placeholder="Please describe how we can support you" rows="5" required></textarea>
+          </div>
+        </div>
+        <div class="form-footer">
+          <p class="privacy-text">By submitting this form, you agree to our <span class="privacy-link" onclick="showPrivacy()">Privacy Policy</span>.</p>
+          <button type="button" class="submit-btn" onclick="submitForm()">Talk to us</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
+        </div>
+        <p>&copy; 2026 CloudTotus. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closePrivacy()">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>We will use your contact information solely to respond to your inquiry and provide you with information about our services.</p>
+      <p>We do not sell, share, or distribute your personal data to third parties.</p>
+      <button onclick="closePrivacy()" class="modal-btn">Close</button>
     </div>
   </div>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="position: fixed; bottom: 30px; right: 30px; background: #013b6f; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 18px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 1000; display: none;">↑</button>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 
-  <script>
-    window.addEventListener('scroll', function() {
-      const backToTopButton = document.getElementById('back-to-top');
-      if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
