@@ -3,123 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You - CloudTotus</title>
+  <title>Thank You | CloudTotus</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="./public/logo/icon32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Umami analytics (preserved) -->
   <script defer src="https://analytics2.cajuclc.com/script.js" data-website-id="dbaaac40-4074-4cf0-a102-f0fc9a183a11"></script>
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      height: 100%;
-    }
-    body {
+    .ty-page {
+      position: relative;
+      min-height: 100svh;
       display: flex;
-      flex-direction: column;
-    }
-    .thankyou-section {
-      flex: 1;
-      display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #000c50 0%, #013b6f 100%);
-      color: var(--white);
       text-align: center;
-      padding: 150px 24px 80px;
+      color: #fff;
+      padding: calc(var(--nav-h) + 40px) 22px 80px;
+      background: var(--grad-brand);
+      overflow: hidden;
     }
-    .thankyou-navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #0f172a;
-      box-shadow: none;
-      z-index: 1000;
-      padding: 16px 0;
+    .ty-content { position: relative; z-index: 2; max-width: 680px; }
+    .ty-icon { width: 132px; height: 132px; margin: 0 auto 28px; animation: fadeUp .7s ease both; }
+    .ty-icon img { width: 100%; height: 100%; }
+    .ty-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      margin-bottom: 18px;
+      animation: fadeUp .7s ease .05s both;
     }
-    .thankyou-navbar .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .ty-message {
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      opacity: .9;
+      margin-bottom: 36px;
+      animation: fadeUp .7s ease .1s both;
     }
-    .thankyou-navbar .nav-logo {
-      display: flex;
-      align-items: center;
-    }
-    .thankyou-navbar .nav-logo img {
-      height: 40px;
-    }
-    .thankyou-content {
-      max-width: 1200px;
-    }
-    .thankyou-icon {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 32px;
-    }
-    .thankyou-title {
-      font-size: clamp(1.5rem, 4vw, 3.5rem);
-      font-weight: 700;
-      margin-bottom: 24px;
-      white-space: nowrap;
-    }
-    .thankyou-message {
-      font-size: 1.3rem;
-      margin-bottom: 40px;
-      line-height: 1.7;
-      opacity: 0.95;
-      white-space: nowrap;
-    }
-    .thankyou-btn {
-      display: inline-block;
-      background: var(--white);
-      color: var(--primary);
-      padding: 16px 40px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .thankyou-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
-    }
+    .ty-actions { animation: fadeUp .7s ease .15s both; }
   </style>
 </head>
 <body>
-  <nav class="navbar thankyou-navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container" style="justify-content:center;">
+      <a href="index.html" class="nav-logo" aria-label="CloudTotus home">
         <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
       </a>
     </div>
   </nav>
 
-  <section class="thankyou-section">
-    <div class="thankyou-content">
-      <div class="thankyou-icon">
-        <img src="./public/message-received.svg" alt="Message Received" style="width: 100%; height: 100%;">
+  <section class="ty-page">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="ty-content">
+      <div class="ty-icon">
+        <img src="./public/message-received.svg" alt="Message received">
       </div>
-      <h1 class="thankyou-title">Thank You for Contacting&nbsp;Us!</h1>
-      <p class="thankyou-message">We received your message and will get back to you as soon as possible.</p>
-      <a href="index.html" class="thankyou-btn">Return to Home</a>
+      <h1 class="ty-title">Thank you for<br><span class="gradient-text">contacting us!</span></h1>
+      <p class="ty-message">We received your message and will get back to you as soon as possible.</p>
+      <div class="ty-actions">
+        <a href="index.html" class="btn btn-ghost">← Return to Home</a>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
-        </div>
-        <p>&copy; 2026 CloudTotus. All rights reserved.</p>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CloudTotus. All rights reserved.</p>
     </div>
   </footer>
 </body>
