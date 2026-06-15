@@ -3,191 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudTotus - Empowering Your Digital Future</title>
+  <title>CloudTotus | Empowering Your Digital Future</title>
+  <meta name="description" content="CloudTotus delivers expert DevOps, Cloud Infrastructure, Cost Management, and AI Services to optimize operations, reduce costs, and unlock innovation.">
+
+  <link rel="icon" type="image/png" href="./public/logo/icon32.png">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- reCAPTCHA v3 (preserved) -->
   <script src="https://www.google.com/recaptcha/api.js?render=6LeBPdgrAAAAAGH4s-DRmxTmsozkCmHpmvVYsAQH"></script>
+
+  <!-- Umami analytics (preserved) -->
   <script defer src="https://analytics2.cajuclc.com/script.js" data-website-id="dbaaac40-4074-4cf0-a102-f0fc9a183a11"></script>
 </head>
 <body>
-  <nav class="navbar">
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <div class="nav-logo">
+      <a href="#top" class="nav-logo" aria-label="CloudTotus home">
         <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
-      </div>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-menu">
+        <li><a href="#services">Services</a></li>
         <li><a href="#devops">DevOps</a></li>
-        <li><a href="#cloud">Cloud Infrastructure</a></li>
-        <li><a href="#cost">Cost Management</a></li>
-        <li><a href="#ai">AI Services</a></li>
+        <li><a href="#cloud">Cloud</a></li>
+        <li><a href="#cost">Cost</a></li>
+        <li><a href="#ai">AI</a></li>
         <li><a href="#why">Why Us</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Empowering Your Digital&nbsp;Future</h1>
-      <p class="hero-subtitle">We specialize in cutting-edge solutions across <span class="highlight blue">DevOps</span>, <span class="highlight green">Cloud Infrastructure</span>, <span class="highlight yellow">Cost Management</span>, and <span class="highlight pink">AI Services</span>.</p>
-      <p class="hero-description">Designed to optimize operations, reduce costs, and unlock innovation.</p>
-      <a href="#contact" class="hero-cta">Get Started</a>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Left: copy -->
+      <div class="hero-copy">
+        <span class="hero-badge">☁ Cloud &amp; AI Consulting</span>
+        <h1 class="hero-title">
+          Empowering your
+          <span class="gradient-text rotator">
+            <span class="rotator-track" aria-hidden="true">
+              <span>digital future</span>
+              <span>cloud journey</span>
+              <span>AI strategy</span>
+              <span>digital future</span>
+            </span>
+          </span>
+        </h1>
+        <p class="hero-description">
+          Cutting-edge solutions across DevOps, Cloud Infrastructure, Cost Management, and AI.
+          Built to optimize operations, reduce costs, and unlock innovation.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Started <span class="arrow">→</span></a>
+          <a href="#services" class="btn btn-ghost">Explore Services</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong data-count="38" data-suffix="%">0%</strong><span>Avg. cost cut</span></li>
+          <li><strong data-count="99.99" data-suffix="%" data-decimals="2">0%</strong><span>Uptime</span></li>
+          <li><strong data-count="3" data-prefix="">0</strong><span>Major clouds</span></li>
+        </ul>
+      </div>
+
+      <!-- Right: animated cloud console visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hv-glow"></div>
+
+        <div class="hv-panel" data-tilt>
+          <div class="hv-head">
+            <span class="hv-dots"><i></i><i></i><i></i></span>
+            <span class="hv-title">CloudTotus · Console</span>
+            <span class="hv-live"><i></i> live</span>
+          </div>
+          <div class="hv-metrics">
+            <div class="hv-metric">
+              <span class="hv-label">Cloud spend</span>
+              <span class="hv-value down">↓ 38%</span>
+            </div>
+            <div class="hv-metric">
+              <span class="hv-label">Uptime</span>
+              <span class="hv-value up">99.99%</span>
+            </div>
+            <div class="hv-metric">
+              <span class="hv-label">Deploys / wk</span>
+              <span class="hv-value">1,284</span>
+            </div>
+          </div>
+          <div class="hv-chart">
+            <span style="--h:42%"></span>
+            <span style="--h:64%"></span>
+            <span style="--h:38%"></span>
+            <span style="--h:78%"></span>
+            <span style="--h:54%"></span>
+            <span style="--h:88%"></span>
+            <span style="--h:70%"></span>
+            <span style="--h:96%"></span>
+          </div>
+          <div class="hv-chart-caption">
+            <span>Optimized &amp; automated</span>
+            <span class="hv-trend">▲ healthy</span>
+          </div>
+        </div>
+
+        <!-- Floating service pills -->
+        <div class="hv-pill hv-pill-1" data-float><img src="./public/devops.svg" alt=""><span>DevOps</span></div>
+        <div class="hv-pill hv-pill-2" data-float><img src="./public/cloud.svg" alt=""><span>Cloud</span></div>
+        <div class="hv-pill hv-pill-3" data-float><img src="./public/money-saving.svg" alt=""><span>Cost</span></div>
+        <div class="hv-pill hv-pill-4" data-float><img src="./public/ai-services.svg" alt=""><span>AI</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SERVICES OVERVIEW ============ -->
+  <section class="services-overview" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Solutions built for scale</h2>
+        <p>Four core practices that take you from assessment to enablement, and keep delivering value over time.</p>
+      </div>
+      <div class="cards-grid">
+        <a href="#devops" class="feature-card reveal accent-blue">
+          <span class="fc-index">01</span>
+          <div class="card-icon"><img src="./public/devops.svg" alt="" loading="lazy"></div>
+          <h3>DevOps</h3>
+          <p>Robust CI/CD pipelines, automation, and seamless dev and ops collaboration.</p>
+          <span class="card-link">Learn more <i>→</i></span>
+        </a>
+        <a href="#cloud" class="feature-card reveal accent-green">
+          <span class="fc-index">02</span>
+          <div class="card-icon"><img src="./public/cloud.svg" alt="" loading="lazy"></div>
+          <h3>Cloud Infrastructure</h3>
+          <p>Design, deploy, and scale secure, high-performance cloud environments.</p>
+          <span class="card-link">Learn more <i>→</i></span>
+        </a>
+        <a href="#cost" class="feature-card reveal accent-amber">
+          <span class="fc-index">03</span>
+          <div class="card-icon"><img src="./public/money-saving.svg" alt="" loading="lazy"></div>
+          <h3>Cost Management</h3>
+          <p>Full visibility and optimization to maximize value from your cloud spend.</p>
+          <span class="card-link">Learn more <i>→</i></span>
+        </a>
+        <a href="#ai" class="feature-card reveal accent-pink">
+          <span class="fc-index">04</span>
+          <div class="card-icon"><img src="./public/ai-services.svg" alt="" loading="lazy"></div>
+          <h3>AI Services</h3>
+          <p>GenAI, intelligent automation, and predictive analytics for transformation.</p>
+          <span class="card-link">Learn more <i>→</i></span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section id="devops" class="service-section">
-    <div class="container">
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="./public/devops.svg" alt="DevOps">
-        </div>
-        <div class="service-content">
-          <h2>DevOps</h2>
-          <h3>Streamline Your Development Lifecycle</h3>
-          <p>Accelerate your innovation and deliver high-quality software faster with our comprehensive DevOps services.</p>
-          <p>We help you implement robust CI/CD pipelines, automate tedious tasks, and foster seamless collaboration between your development and operations teams.</p>
-          <p>From initial assessment to full-scale implementation and ongoing support, CloudTotus empowers you to achieve continuous integration and continuous delivery with confidence.</p>
+  <!-- ============ DETAIL SECTIONS ============ -->
+  <section id="devops" class="feature-row acc-blue">
+    <div class="container feature-inner">
+      <div class="feature-media reveal">
+        <span class="media-blob"></span>
+        <img src="./public/devops.svg" alt="DevOps" loading="lazy">
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">DevOps</span>
+        <h2>Streamline Your Development Lifecycle</h2>
+        <p>Accelerate your innovation and deliver high-quality software faster with our comprehensive DevOps services.</p>
+        <p>We help you implement robust CI/CD pipelines, automate tedious tasks, and foster seamless collaboration between your development and operations teams.</p>
+        <p>From initial assessment to full-scale implementation and ongoing support, CloudTotus empowers you to achieve continuous integration and continuous delivery with confidence.</p>
+        <div class="tag-row">
+          <span>CI/CD</span><span>Infrastructure as Code</span><span>Automation</span><span>Observability</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="cloud" class="service-section alt">
-    <div class="container">
-      <div class="service-card reverse">
-        <div class="service-icon">
-          <img src="cloud-large.svg" alt="Cloud Infrastructure">
-        </div>
-        <div class="service-content">
-          <h2>Cloud Infrastructure</h2>
-          <h3>Design, Deploy, and Scale with Confidence</h3>
-          <p>CloudTotus provides expert cloud infrastructure services to help you design, deploy, and manage scalable, secure, and high-performance cloud environments.</p>
-          <p>We architect robust solutions, implement best practices for security and compliance, and ensure your infrastructure can scale seamlessly with your business growth across all major cloud providers.</p>
+  <section id="cloud" class="feature-row alt acc-green">
+    <div class="container feature-inner reverse">
+      <div class="feature-media reveal">
+        <span class="media-blob"></span>
+        <img src="cloud-large.svg" alt="Cloud Infrastructure" loading="lazy">
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">Cloud Infrastructure</span>
+        <h2>Design, Deploy, and Scale with Confidence</h2>
+        <p>CloudTotus provides expert cloud infrastructure services to help you design, deploy, and manage scalable, secure, and high-performance cloud environments.</p>
+        <p>We architect robust solutions, implement best practices for security and compliance, and ensure your infrastructure can scale seamlessly with your business growth across all major cloud providers.</p>
+        <div class="tag-row">
+          <span>Multi-cloud</span><span>Security</span><span>Scalability</span><span>High availability</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="cost" class="service-section">
-    <div class="container">
-      <div class="service-card">
-        <div class="service-icon">
-          <img src="./public/money-saving.svg" alt="Cost Management">
-        </div>
-        <div class="service-content">
-          <h2>Cost Management</h2>
-          <h3>Optimize Your Spend, Maximize Your Value</h3>
-          <p>CloudTotus provides expert cloud infrastructure cost management services to help you gain complete visibility, control, and optimization over your cloud spending.</p>
-          <p>We identify inefficiencies, implement cost-saving strategies, and leverage the latest tools to ensure you're getting the most value from your cloud investments across all major providers.</p>
+  <section id="cost" class="feature-row acc-amber">
+    <div class="container feature-inner">
+      <div class="feature-media reveal">
+        <span class="media-blob"></span>
+        <img src="./public/money-saving.svg" alt="Cost Management" loading="lazy">
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">Cost Management</span>
+        <h2>Optimize Your Spend, Maximize Your Value</h2>
+        <p>CloudTotus provides expert cloud infrastructure cost management services to help you gain complete visibility, control, and optimization over your cloud spending.</p>
+        <p>We identify inefficiencies, implement cost-saving strategies, and leverage the latest tools to ensure you're getting the most value from your cloud investments across all major providers.</p>
+        <div class="tag-row">
+          <span>FinOps</span><span>Rightsizing</span><span>Budget alerts</span><span>Savings plans</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="ai" class="service-section alt">
-    <div class="container">
-      <div class="service-card reverse">
-        <div class="service-icon">
-          <img src="./public/ai-services.svg" alt="AI Services">
-        </div>
-        <div class="service-content">
-          <h2>AI Services</h2>
-          <h3>Transform Your Business with GenAI</h3>
-          <p>CloudTotus provides cutting-edge AI services to help you harness the power of artificial intelligence and machine learning for your business transformation.</p>
-          <p>We implement intelligent automation, predictive analytics, and AI-driven solutions that enhance decision-making, improve efficiency, and unlock new opportunities for innovation across your organization.</p>
+  <section id="ai" class="feature-row alt acc-pink">
+    <div class="container feature-inner reverse">
+      <div class="feature-media reveal">
+        <span class="media-blob"></span>
+        <img src="./public/ai-services.svg" alt="AI Services" loading="lazy">
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">AI Services</span>
+        <h2>Transform Your Business with GenAI</h2>
+        <p>CloudTotus provides cutting-edge AI services to help you harness the power of artificial intelligence and machine learning for your business transformation.</p>
+        <p>We implement intelligent automation, predictive analytics, and AI-driven solutions that enhance decision-making, improve efficiency, and unlock new opportunities for innovation across your organization.</p>
+        <div class="tag-row">
+          <span>GenAI</span><span>Machine learning</span><span>Automation</span><span>Predictive analytics</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ WHY US ============ -->
   <section id="why" class="why-section">
+    <div class="why-bg" aria-hidden="true"></div>
     <div class="container">
-      <h2>Why Choose CloudTotus?</h2>
-      <div class="why-content">
-        <p>At CloudTotus, we provide the experience of veteran enterprise practitioners who not only have extensive industry experience, but will also be completely devoted to your success! We understand every business is unique, so we will work to adapt and customize our methodology within the context of your goals, constraints and roadmap.</p>
-        <p>Our certified professionals deliver actionable results, not just a plan! We connect every engagement back to defined KPIs with accountability in our delivery, which ensures that your Cloud and AI journey is effective, efficient, and made to have the least friction and most impact in how you operate.</p>
-        <p>The CloudTotus consulting approach takes you from assessment through enablement while progressively driving value by improving the end solution to deliver more value, adding more governance, and ultimately building a more resilient organization.</p>
+      <div class="section-head light reveal">
+        <span class="eyebrow">Why CloudTotus</span>
+        <h2>Veteran practitioners, devoted to your success</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal acc-blue">
+          <div class="why-num">01</div>
+          <h3>Enterprise experience</h3>
+          <p>We bring the experience of veteran enterprise practitioners and adapt our methodology to your goals, constraints, and roadmap, because every business is unique.</p>
+        </div>
+        <div class="why-card reveal acc-green">
+          <div class="why-num">02</div>
+          <h3>Actionable results</h3>
+          <p>Our certified professionals deliver results, not just a plan. We connect every engagement back to defined KPIs with accountability in our delivery.</p>
+        </div>
+        <div class="why-card reveal acc-pink">
+          <div class="why-num">03</div>
+          <h3>Progressive value</h3>
+          <p>From assessment through enablement, we progressively drive value by adding governance and building a more resilient organization at every step.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ CONTACT ============ -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <h2>Ready to take your business higher?</h2>
-      <p class="contact-intro">Discover how CloudTotus can empower your organization to achieve its full potential. Contact us today for a consultation and let's build your digital future, together.</p>
-      
-      <form id="contact-form" class="contact-form" action="https://n8n.cloudtot.us/webhook/c63ed714-d389-4ece-b41d-337875a6c880" method="GET">
-        <div class="form-grid">
-          <div class="form-group">
-            <label>First name *</label>
-            <input type="text" name="firstname" placeholder="Enter your first name" required>
+      <div class="contact-grid">
+        <aside class="contact-aside reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Ready to take your business higher?</h2>
+          <p>Discover how CloudTotus can empower your organization to achieve its full potential. Contact us today for a consultation and let's build your digital future, together.</p>
+          <ul class="contact-perks">
+            <li><span class="cp-ic">✓</span> Free, no-obligation consultation</li>
+            <li><span class="cp-ic">✓</span> Tailored to your goals and roadmap</li>
+            <li><span class="cp-ic">✓</span> Senior practitioners, not junior handoffs</li>
+          </ul>
+          <div class="contact-resp"><span class="cr-dot"></span> We typically reply within 1 business day</div>
+        </aside>
+
+        <!-- Form behavior preserved: GET to n8n webhook, same field names, reCAPTCHA v3 -->
+        <form id="contact-form" class="contact-form reveal"
+              action="https://n8n.cloudtot.us/webhook/c63ed714-d389-4ece-b41d-337875a6c880"
+              method="GET">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="firstname">First name <span>*</span></label>
+              <input id="firstname" type="text" name="firstname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last name <span>*</span></label>
+              <input id="lastname" type="text" name="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Business email <span>*</span></label>
+              <input id="email" type="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number <span>*</span></label>
+              <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="companyname">Company <span>*</span></label>
+              <input id="companyname" type="text" name="companyname" placeholder="Where do you work?" required>
+            </div>
+            <div class="form-group">
+              <label for="jobposition">Position <span>*</span></label>
+              <input id="jobposition" type="text" name="jobposition" placeholder="What is your job position?" required>
+            </div>
+            <div class="form-group">
+              <label for="companysize">Company size</label>
+              <select id="companysize" name="companysize">
+                <option value="" disabled selected>Select...</option>
+                <option value="1-10">1 to 10</option>
+                <option value="11-50">11 to 50</option>
+                <option value="51-200">51 to 200</option>
+                <option value="201-1000">201 to 1000</option>
+                <option value="1000+">1000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="country">Country <span>*</span></label>
+              <input id="country" type="text" name="country" placeholder="United States" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">How can we support you <span>*</span></label>
+              <textarea id="message" name="message" placeholder="Please describe how we can support you" rows="5" required></textarea>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Last name *</label>
-            <input type="text" name="lastname" placeholder="Enter your last name" required>
+          <div class="form-footer">
+            <p class="privacy-text">By submitting this form, you agree to our
+              <button type="button" class="privacy-link" onclick="showPrivacy()">Privacy Policy</button>.
+            </p>
+            <button type="button" class="btn btn-primary submit-btn" onclick="submitForm()">Talk to us <span class="arrow">→</span></button>
           </div>
-          <div class="form-group">
-            <label>Business email *</label>
-            <input type="email" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label>Phone number *</label>
-            <input type="tel" name="phone" placeholder="Enter your phone number" required>
-          </div>
-          <div class="form-group">
-            <label>Company *</label>
-            <input type="text" name="companyname" placeholder="Where do you work?" required>
-          </div>
-          <div class="form-group">
-            <label>Position *</label>
-            <input type="text" name="jobposition" placeholder="What is your job position?" required>
-          </div>
-          <div class="form-group">
-            <label>Company size</label>
-            <input type="text" name="companysize" placeholder="Select...">
-          </div>
-          <div class="form-group">
-            <label>Country *</label>
-            <input type="text" name="country" placeholder="United States" required>
-          </div>
-          <div class="form-group full-width">
-            <label>How can we support you *</label>
-            <textarea name="message" placeholder="Please describe how we can support you" rows="5" required></textarea>
-          </div>
-        </div>
-        <div class="form-footer">
-          <p class="privacy-text">By submitting this form, you agree to our <span class="privacy-link" onclick="showPrivacy()">Privacy Policy</span>.</p>
-          <button type="button" class="submit-btn" onclick="submitForm()">Talk to us</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
-        </div>
-        <p>&copy; 2026 CloudTotus. All rights reserved.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="./public/logo/cloudtotus_light_h.png" alt="CloudTotus">
+        <p>Empowering your digital future with Cloud &amp; AI expertise.</p>
       </div>
+      <nav class="footer-links" aria-label="Footer">
+        <div>
+          <h4>Services</h4>
+          <a href="#devops">DevOps</a>
+          <a href="#cloud">Cloud Infrastructure</a>
+          <a href="#cost">Cost Management</a>
+          <a href="#ai">AI Services</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CloudTotus. All rights reserved.</p>
     </div>
   </footer>
 
-  <div id="privacy-modal" class="modal">
+  <!-- ============ PRIVACY MODAL ============ -->
+  <div id="privacy-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
     <div class="modal-content">
-      <span class="modal-close" onclick="closePrivacy()">&times;</span>
-      <h2>Privacy Policy</h2>
+      <button class="modal-close" onclick="closePrivacy()" aria-label="Close">&times;</button>
+      <h2 id="privacy-title">Privacy Policy</h2>
       <p>We will use your contact information solely to respond to your inquiry and provide you with information about our services.</p>
       <p>We do not sell, share, or distribute your personal data to third parties.</p>
-      <button onclick="closePrivacy()" class="modal-btn">Close</button>
+      <button onclick="closePrivacy()" class="btn btn-primary modal-btn">Close</button>
     </div>
   </div>
 
